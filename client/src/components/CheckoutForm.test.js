@@ -12,7 +12,7 @@ test("form header renders", () => {
 
 test("form shows success message on submit with form details", () => {
     const { getByText } = render(<CheckoutForm/>);
-    const submit = getByText(/You have ordered some plants!/i);
+    const submit = getByText(/You have ordered some plants/i);
     expect(submit).toBeInTheDocument();
 
 });
