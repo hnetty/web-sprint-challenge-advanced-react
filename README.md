@@ -30,13 +30,27 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+Begin by adding a constructor with state, render UI and return JSX elements. Often times these JSX elements will rely on variables held in state.
+
 2. Describe the different phases of the component lifecycle.
+
+Mounting - this is where the component starts to be made from scratch
+Update - changes are made throughout the render process during this phase
+Unmounting - removes the mounted component from the screen
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+componentDidMount - this is the method used when first creating/rendering to the page
+componentDidUpdate - this is the method used when changes are made to the data or the page and the component needs to be updated as a result of that
+componentWillUnmount - this is the method used when there are no more changes and the screen no longer needs the component
+
 4. Define stateful logic.
 
+Stateful logic is logic that is tied to the values connected to the UI. Basically any code that uses state. 
+
 5. Describe how to test a React component with React Testing Library.
+
+Test visual components, purposly fail tests to make sure they work, test various parts of the component (length, type of data)
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -138,3 +152,4 @@ Follow these steps for completing your project.
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
+
